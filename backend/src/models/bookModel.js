@@ -1,5 +1,9 @@
-import connection from "./index.js";
 import { DataTypes } from "sequelize";
+
+
+// components
+import connection from "./index.js";
+
 
 export default connection.define(
   "books",
