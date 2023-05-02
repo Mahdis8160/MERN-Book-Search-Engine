@@ -7,6 +7,8 @@ services:
   search-mongo:
     container_name: search-mongo
     image: mongo:latest
+    ports:
+      - "27017:27017"
     volumes:
       - mongo-vol:/data/db
     networks:
@@ -21,5 +23,5 @@ volumes:
 networks:
   search-network:
     driver: bridge
-      #    external: true
+    #    external: true
 
